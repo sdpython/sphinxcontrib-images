@@ -42,7 +42,7 @@ setup(
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3',
         'Topic :: Documentation',
     ],
     entry_points={
@@ -58,9 +58,8 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     setup_requires=['wheel'],
-    install_requires=['sphinx>=1.1.3,<2',
-                      'requests>2.2,<3'],
-    tests_require=['tox==2.3.1'],
+    install_requires=['sphinx', 'requests'],
+    tests_require=['tox'],
     cmdclass = {'test': Tox},
     namespace_packages=['sphinxcontrib'],
 )
